@@ -20,8 +20,16 @@
     </style>
 </head>
 <body>
-    <p style="text-align: right;">Last Updated On: December 29th, 2023<br><br><br></p> <!-- Last Updated -->
-    <h1>William Chen's Portfolio</h1> <!-- Title -->
+    <p style="text-align: right; margin-bottom: 5px;">Last Updated On: December 29th, 2023<br> Refresh for up-to date site.</p> <!-- Last Updated -->
+    <p id="currentDate", style="text-align: right; margin-top: 5px;",></p>
+    <script>
+        var date = new Date();
+	    var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+	    var current_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+	    var date_time = "Last Refreshed: \n" + current_date+" "+current_time;	
+	    document.getElementById("currentDate").innerHTML = date_time;
+    </script>
+    <h1>William Chen's Portfolio </h1> <!-- Title -->
     
     
 
